@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantasia Palace</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  
+
+</head>
+
+<body>
+
+
+  <header>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="images/logo.png" alt="">
+      </div>
+      <div class="navlinks">
+        <ul id="menulist">
+          <li><a href="#home">home</a> </li>
+          <li><a href="#about">about</a> </li>
+          <li><a href="#rooms">rooms</a> </li>
+          <li><a href="#pages">pages</a> </li>
+          <li><a href="#news top rooms">news</a> </li>
+          <li><a href="#contactme">contact</a> </li>
+          <li> <i class="fa fa-search"></i> </li>
+          <li> <button class="primary-btn">BOOK NOW</button> </li>
+        </ul>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+  </header>
+
+
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+
+  <section class="home">
+    <div class="content">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="images/cover11.jpg" alt="">
+          <div class="text">
+            <h1>World Of Fantasia</h1>
+            <p>Don't miss the amazing experience of Fantasia Kingdom
+            </p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/cover22.jpg" alt="" style="filter: brightness(40%) contrast(90%);">
+          <div class="text">
+            <h1>World Of Fantasia</h1>
+            <p>Swipe to see more</p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <!-- height="600" -->
+          <img src="images/cover333.jpg" alt="" style="filter: brightness(30%) contrast(99%);">
+          <div class="text">
+            <h1>World Of Fantasia</h1>
+            <p>scroll to know more</p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+
+  <section class="book">
+    <div class="container flex_space">
+      <div class="text">
+        <h1> <span>Book </span> Your Rooms </h1>
+      </div>
+      <div class="form">
+        <form class="grid">
+          <input type="date" placeholder="Araival Date">
+          <input type="date" placeholder="Departure Date">
+          <input type="number" placeholder="Adults">
+          <input type="number" placeholder="Children">
+          <input type="submit" value="CHECK AVAILABILITY">
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="abouttop">
+    <div class="container flex">
+      <div class="left">
+        <div class="heading">
+          <h1>WELCOME</h1>
+          <h2>Fantasia Palace</h2>
+        </div>
+        <p>Hotel Fantasia Palace is a luxurious haven that transcends traditional hospitality, inviting guests into a realm where opulence and enchantment converge. Nestled amidst breathtaking landscapes, this architectural masterpiece embodies a fusion of contemporary elegance and timeless charm. The lobby, adorned with intricate details and adorned with bespoke artworks, sets the tone for an extraordinary stay. From lavishly appointed suites offering panoramic views to world-class amenities, including spa retreats and culinary delights curated by renowned chefs, every facet of Fantasia Palace is meticulously crafted to indulge the senses. Whether it's the enchanting ambiance, impeccable service, or the seamless blend of modern comforts with classic allure, Hotel Fantasia Palace promises an unforgettable experience, where each moment is a chapter in a story of refined luxury and enchanting escapades.</p>
+        <button class="primary-btn">ABOUT US</button>
+      </div>
+      <div class="right">
+        <img src="images/reception.jpeg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="counter top">
+    <div class="container grid">
+      <div class="box">
+        <h1>2500</h1>
+        <hr>
+        <span>Customer</span>
+      </div>
+      <div class="box">
+        <h1>1250</h1>
+        <hr>
+        <span>Happy Customer</span>
+      </div>
+      <div class="box">
+        <h1>150</h1>
+        <hr>
+        <span>Expert Technicians</span>
+      </div>
+      <div class="box">
+        <h1>3550</h1>
+        <hr>
+        <span>Desktop Reaired</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="rooms">
+    <div class="container top">
+      <div class="heading">
+        <h1>EXPOLRE</h1>
+        <h2>Our Rooms</h2>
+        <p>Our rooms at Hotel Fantasia Palace epitomize refined comfort, blending contemporary design with indulgent amenities to create a sanctuary of unparalleled luxury for our discerning guests.</p>
+      </div>
+
+      <div class="content mtop">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div class="items">
+            <div class="image">
+              <img src="images/room-1.jpeg" alt="" width="300" height="300">
+            </div>
+            <div class="text">
+              <h2>Single Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Embrace the perfect blend of comfort and functionality in our Single Rooms, designed for solo travelers seeking a cozy retreat with modern amenities.</p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>Rs.2000 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-2.jpeg" alt="" width="300" height="300">
+            </div>
+            <div class="text">
+              <h2>Superior Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Elevate your stay in our Superior Rooms, where spacious interiors, elegant furnishings, and upgraded features converge to provide a heightened level of luxury.</p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>Rs.3000 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-3.jpeg" alt="" width="300" height="300">
+            </div>
+            <div class="text">
+              <h2>Kids Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Immerse your little ones in a world of whimsy and delight with our specially designed Kids Rooms, where vibrant decor and thoughtful amenities cater to the unique needs of our youngest guests.</p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>Rs.2500 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-4.jpg" alt="" width="300" height="300">
+            </div>
+            <div class="text">
+              <h2>Royal Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Indulge in regal opulence with our Royal Rooms, where grandeur meets modernity, offering an exquisite space for those desiring a truly majestic experience.</p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>Rs.5000 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-5.jpeg" alt="" width="300" height="300">
+            </div>
+            <div class="text">
+              <h2>Deluxe Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Experience a refined sense of luxury in our Deluxe Rooms, where tasteful decor, premium amenities, and personalized service converge to create a haven of sophistication.</p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>Rs.6000 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-6.jpeg" alt="" width="300" height="300">
+            </div>
+            <div class="text">
+              <h2>Suite Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Unwind in style with our spacious Suites, where a harmonious blend of comfort and extravagance awaits, providing an indulgent escape for those seeking an extra touch of refinement.</p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>Rs.8000 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-7.jpeg" alt="" width="300" height="300">
+            </div>
+            <div class="text">
+              <h2>Cabana Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Bask in the serenity of our Cabana Rooms, featuring direct access to poolside relaxation and a seamless indoor-outdoor experience, perfect for those desiring a tranquil escape.</p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>Rs.9000 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/room-8.jpeg" alt="" width="300" height="300">
+            </div>
+            <div class="text">
+              <h2>Luxury Penthouse Rooms</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Ascend to unparalleled heights of luxury in our Luxury Penthouse Rooms, offering expansive spaces, panoramic views, and bespoke amenities for a truly elevated and exclusive experience.</p>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>Rs.10000 <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2,
+          margin: 10,
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="gallery">
+    <div class="container top">
+      <div class="heading">
+        <h1>PHOTOS</h1>
+        <h2>Our Gallery</h2>
+        <p>"Explore the allure of Fantasia Palace in our captivating gallery – a visual journey into luxury and enchantment."
+      </div>
+    </div>
+
+    <div class="content mtop">
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div class="items">
+          <div class="img">
+            <img src="images/gallary-1.jpg" alt="" width="50" height="200">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Fantasia Palace</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallary-2.jpeg" alt="" width="50" height="200">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Palace Pool</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallary-4.jpeg" alt="" width="50" height="200">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Private Jacuzzi</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallary-3.webp" alt="" width="50" height="200">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Palace Backyard</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallary-5.jpg" alt="" width="50" height="200">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Royal Jacuzzi</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallary-6.jpeg" alt="" width="50" height="200">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Bar of Heaven</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallary-7.jpeg" alt="" width="50" height="200">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Fantasy View</h3>
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="images/gallary-8.jpeg" alt="" width="50" height="200">
+          </div>
+          <div class="overlay">
+            <span class="fa fa-plus"> </span>
+            <h3>Garden Area</h3>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 4,
+        },
+        1000: {
+          items: 6
+        }
+      }
+    })
+  </script>
+
+
+  <section class="services top">
+    <div class="container">
+      <div class="heading">
+        <h1>SERVICES</h1>
+        <h2>Our Services</h2>
+        <p>"Experience unmatched luxury at Fantasia Palace, where impeccable service and lavish amenities redefine hospitality."
+      </div>
+
+
+      <div class="content flex_space">
+        <div class="left grid2">
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-champagne-glasses"></i>
+              <h3>Delious Food</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-person-biking"></i>
+              <h3>Fintness</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-utensils"></i>
+              <h3>Inhouse Restaurant</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-spa"></i>
+              <h3>Beauty Spa</h3>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="images/service.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="Customer top">
+    <div class="container">
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Our stay at Hotel Fantasia Palace was nothing short of regal. The Royal Room we occupied exceeded all expectations, with its lavish decor, spacious layout, and impeccable attention to detail. The seamless blend of classic elegance and modern amenities provided an indulgent experience. The staff's hospitality was outstanding, catering to our every need. From the grandeur of the room to the personalized service, Hotel Fantasia Palace truly offers a retreat fit for royalty.</p>
+          <h3>Pratichi Parida</h3>
+          <label>Pratichi Parida</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Our family getaway at Hotel Fantasia Palace was a delight, thanks to the thoughtfully designed Kids Room that catered perfectly to our little ones. The vibrant decor, child-friendly amenities, and attention to safety made our stay worry-free. The hotel's commitment to creating a family-friendly atmosphere, coupled with its top-notch service, ensured a memorable experience for both parents and children. Hotel Fantasia Palace is now our go-to destination for family vacations.</p>
+          <h3>Tushar Biswal</h3>
+          <label>Tushar Biswal</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Our recent stay at Hotel Fantasia Palace was a serene escape, courtesy of the Cabana Room. The direct access to the pool and the seamless indoor-outdoor flow created a tranquil atmosphere that instantly transported us to a state of relaxation. The room's tasteful design, coupled with attentive service, made our stay truly exceptional. Hotel Fantasia Palace's Cabana Room is a haven for those seeking a perfect blend of luxury and tranquility—a truly exquisite experience.</p>
+          <h3>P Parida</h3>
+          <label>P Parida</label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1,
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="news top rooms">
+    <div class="container">
+      <div class="heading">
+        <h1>NEWS</h1>
+        <h2>Our News</h2>
+        <p>"Experience Unrivaled Luxury: Grand Unveiling of Fantasia Palace - A World of Opulence and Elegance Awaits!"
+      </div>
+
+
+      <div class="content flex">
+        <div class="left grid2">
+          <div class="items">
+            <div class="image">
+              <img src="images/blog-1.jpeg" alt="">
+            </div>
+            <div class="text">
+              <h2>Finibus bonorum malorm.</h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Admin</label>
+                <i class="fa fa-heart"></i>
+                <label>500</label>
+                <i class="fa fa-comments"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="images/blog-2.jpeg" alt="">
+            </div>
+            <div class="text">
+              <h2>Finibus bonorum malorm.</h2>
+              <div class="admin flex">
+                <i class="fa fa-user"></i>
+                <label>Admin</label>
+                <i class="fa fa-heart"></i>
+                <label>500</label>
+                <i class="fa fa-comments"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="box flex">
+            <div class="img">
+              <img src="images/blog-s1.jpg" alt="">
+            </div>
+            <div class="stext">
+              <h2>Etiam Vel Nequ</h2>
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+              </p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="images/blog-s2.jpeg" alt="">
+            </div>
+            <div class="stext">
+              <h2>Etiam Vel Nequ</h2>
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+              </p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="images/blog-s3.jpeg" alt="">
+            </div>
+            <div class="stext">
+              <h2>Etiam Vel Nequ</h2>
+              <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="newsletter mtop">
+    <div class="container flex_space">
+      <h1>Subscribe to Our Newsletter</h1>
+      <input type="text" placeholder="Your Email">
+      <input type="text" value="Subscribe">
+    </div>
+  </section>
+
+<section id="contactme">
+  <footer>
+    <div class="container grid">
+      <div class="box">
+        <img src="images/fantasia palace.jpeg" alt="" width="300" height="300">
+        <p>Nestled amidst breathtaking landscapes, Hotel Fantasia Palace is a haven of luxury and enchantment. With opulent decor, impeccable service, and panoramic views, every moment at Fantasia Palace is a journey into indulgence. Indulge in sumptuous dining, unwind in lavish accommodations, and immerse yourself in the magical ambiance that defines this extraordinary retreat. From its regal architecture to the meticulous attention to detail, Hotel Fantasia Palace promises a stay where dreams come alive and memories are crafted with elegance and sophistication. Welcome to a realm of unparalleled hospitality at Hotel Fantasia Palace.</p>
+
+        <div class="icon">
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-youtube"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Links</h2>
+        <ul>
+          <li>Company History</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Services</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+        </p>
+        <i class="fa fa-location-dot"></i>
+        <label>1201 park street, Avenue, Dhanmondy, Dhaka. </label> <br>
+        <i class="fa fa-phone"></i>
+        <label>[88] 657 524 332</label> <br>
+        <i class="fa fa-envelope"></i>
+        <label>info@dentar.com</label> <br>
+      </div>
+    </div>
+  </footer>
+</section>
+  <div class="legal">
+    <p class="container">Copyright (c) 2022 Copyright Holder All Rights Reserved.</p>
+  </div>
+
+
+
+  <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!-- <div class="items">
+  <div class="img">
+    <img src="images/gallary-2.jpeg" alt="" width="50" height="200">
+  </div>
+  <div class="overlay">
+    <span class="fa fa-plus"> </span>
+    <h3>Photo Title Here.</h3>
+  </div>
+</div>
+<div class="items">
+  <div class="img">
+    <img src="images/gallary-1.jpg" alt="" width="50" height="200">
+  </div>
+  <div class="overlay">
+    <span class="fa fa-plus"> </span>
+    <h3>Photo Title Here.</h3>
+  </div>
+</div> -->
